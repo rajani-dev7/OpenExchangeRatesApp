@@ -1,0 +1,8 @@
+{
+    "appId" : "app_id",
+    "apiKey" : "4ea0dea090cd4e42ba4eb8e74de036e9",
+    "baseUrl" : "https://openexchangerates.org/api/",
+    "currenciesPath" : "currencies.json",
+    "exchangeRatesPath" : "latest.json",
+    "precisionType" : "floor"
+}

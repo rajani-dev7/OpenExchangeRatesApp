@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E550BA012CC26F1F005B9553 /* OpenExchangeRatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA002CC26F1F005B9553 /* OpenExchangeRatesApp.swift */; };
+		E550BA032CC26F1F005B9553 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA022CC26F1F005B9553 /* ContentView.swift */; };
+		E550BA052CC26F20005B9553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E550BA042CC26F20005B9553 /* Assets.xcassets */; };
+		E550BA082CC26F20005B9553 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E550BA072CC26F20005B9553 /* Preview Assets.xcassets */; };
+		E550BA152CC26FB3005B9553 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA142CC26FB3005B9553 /* NetworkService.swift */; };
+		E550BA182CC2719F005B9553 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA172CC2719F005B9553 /* HTTPMethod.swift */; };
+		E550BA1A2CC274C5005B9553 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA192CC274C5005B9553 /* Data+Extension.swift */; };
+		E550BA1C2CC275E3005B9553 /* CurrencyListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA1B2CC275E3005B9553 /* CurrencyListService.swift */; };
+		E550BA1E2CC27618005B9553 /* URLConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA1D2CC27618005B9553 /* URLConfigurations.swift */; };
+		E550BA202CC279B4005B9553 /* ExchangeRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA1F2CC279B4005B9553 /* ExchangeRatesService.swift */; };
+		E550BA222CC27AC0005B9553 /* ExchangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA212CC27AC0005B9553 /* ExchangeRateModel.swift */; };
+		E550BA242CC282E4005B9553 /* APITimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA232CC282E4005B9553 /* APITimerService.swift */; };
+		E550BA262CC29597005B9553 /* APITimerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA252CC29597005B9553 /* APITimerValidator.swift */; };
+		E550BA282CC29955005B9553 /* ExchangeRatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA272CC29955005B9553 /* ExchangeRatesViewModel.swift */; };
+		E550BA322CC38A1B005B9553 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA312CC38A1B005B9553 /* Date+Extension.swift */; };
+		E550BA342CC39164005B9553 /* ExchangeRatesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA332CC39164005B9553 /* ExchangeRatesCell.swift */; };
+		E550BA362CC399FA005B9553 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA352CC399FA005B9553 /* Double+Extension.swift */; };
+		E550BA392CC39BEE005B9553 /* DecimalTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA382CC39BEE005B9553 /* DecimalTextFieldModifier.swift */; };
+		E550BA3D2CC3B075005B9553 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA3C2CC3B075005B9553 /* APIClientError.swift */; };
+		E550BA3F2CC3C3BF005B9553 /* ExchangedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA3E2CC3C3BF005B9553 /* ExchangedModel.swift */; };
+		E550BA472CC3C6DD005B9553 /* OpenExchangeRatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA462CC3C6DD005B9553 /* OpenExchangeRatesTests.swift */; };
+		E550BA4E2CC3C6FB005B9553 /* MockCurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA4D2CC3C6FB005B9553 /* MockCurrencyService.swift */; };
+		E550BA502CC3C728005B9553 /* MockExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550BA4F2CC3C728005B9553 /* MockExchangeRateService.swift */; };
+		E5D12F5D2CC4DEEB00C04C2E /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F5C2CC4DEEB00C04C2E /* URLRequest+Extension.swift */; };
+		E5D12F602CC4E05900C04C2E /* Config.json in Resources */ = {isa = PBXBuildFile; fileRef = E5D12F5F2CC4E05900C04C2E /* Config.json */; };
+		E5D12F622CC4E12A00C04C2E /* URLConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F612CC4E12A00C04C2E /* URLConfigs.swift */; };
+		E5D12F642CC4E52100C04C2E /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F632CC4E52100C04C2E /* URLType.swift */; };
+		E5D12F6B2CC4EFD200C04C2E /* CustomLinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F6A2CC4EFD200C04C2E /* CustomLinearGradientView.swift */; };
+		E5D12F6D2CC61A3700C04C2E /* PrecisionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F6C2CC61A3700C04C2E /* PrecisionType.swift */; };
+		E5D12F6F2CC622C500C04C2E /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F6E2CC622C500C04C2E /* View+Extension.swift */; };
+		E5D12F722CC66D4300C04C2E /* UserDefault+PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F712CC66D4300C04C2E /* UserDefault+PropertyWrapper.swift */; };
+		E5D12F742CC66D6100C04C2E /* APITimerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F732CC66D6100C04C2E /* APITimerSettings.swift */; };
+		E5D12F762CC686FF00C04C2E /* ContentView+CurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F752CC686FF00C04C2E /* ContentView+CurrencyPickerView.swift */; };
+		E5D12F782CC6873600C04C2E /* ContentView+ExchangeRatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D12F772CC6873600C04C2E /* ContentView+ExchangeRatesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E550BA482CC3C6DD005B9553 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E550B9F52CC26F1F005B9553 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E550B9FC2CC26F1F005B9553;
+			remoteInfo = OpenExchangeRates;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E550B9FD2CC26F1F005B9553 /* OpenExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E550BA002CC26F1F005B9553 /* OpenExchangeRatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenExchangeRatesApp.swift; sourceTree = "<group>"; };
+		E550BA022CC26F1F005B9553 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E550BA042CC26F20005B9553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E550BA072CC26F20005B9553 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E550BA142CC26FB3005B9553 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E550BA172CC2719F005B9553 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		E550BA192CC274C5005B9553 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		E550BA1B2CC275E3005B9553 /* CurrencyListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListService.swift; sourceTree = "<group>"; };
+		E550BA1D2CC27618005B9553 /* URLConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConfigurations.swift; sourceTree = "<group>"; };
+		E550BA1F2CC279B4005B9553 /* ExchangeRatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesService.swift; sourceTree = "<group>"; };
+		E550BA212CC27AC0005B9553 /* ExchangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModel.swift; sourceTree = "<group>"; };
+		E550BA232CC282E4005B9553 /* APITimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITimerService.swift; sourceTree = "<group>"; };
+		E550BA252CC29597005B9553 /* APITimerValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITimerValidator.swift; sourceTree = "<group>"; };
+		E550BA272CC29955005B9553 /* ExchangeRatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesViewModel.swift; sourceTree = "<group>"; };
+		E550BA312CC38A1B005B9553 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		E550BA332CC39164005B9553 /* ExchangeRatesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesCell.swift; sourceTree = "<group>"; };
+		E550BA352CC399FA005B9553 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		E550BA382CC39BEE005B9553 /* DecimalTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalTextFieldModifier.swift; sourceTree = "<group>"; };
+		E550BA3C2CC3B075005B9553 /* APIClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
+		E550BA3E2CC3C3BF005B9553 /* ExchangedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangedModel.swift; sourceTree = "<group>"; };
+		E550BA442CC3C6DD005B9553 /* OpenExchangeRatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenExchangeRatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E550BA462CC3C6DD005B9553 /* OpenExchangeRatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenExchangeRatesTests.swift; sourceTree = "<group>"; };
+		E550BA4D2CC3C6FB005B9553 /* MockCurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCurrencyService.swift; sourceTree = "<group>"; };
+		E550BA4F2CC3C728005B9553 /* MockExchangeRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExchangeRateService.swift; sourceTree = "<group>"; };
+		E5D12F5C2CC4DEEB00C04C2E /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		E5D12F5F2CC4E05900C04C2E /* Config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Config.json; sourceTree = "<group>"; };
+		E5D12F612CC4E12A00C04C2E /* URLConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConfigs.swift; sourceTree = "<group>"; };
+		E5D12F632CC4E52100C04C2E /* URLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
+		E5D12F672CC4EC1500C04C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E5D12F6A2CC4EFD200C04C2E /* CustomLinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLinearGradientView.swift; sourceTree = "<group>"; };
+		E5D12F6C2CC61A3700C04C2E /* PrecisionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecisionType.swift; sourceTree = "<group>"; };
+		E5D12F6E2CC622C500C04C2E /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		E5D12F712CC66D4300C04C2E /* UserDefault+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+PropertyWrapper.swift"; sourceTree = "<group>"; };
+		E5D12F732CC66D6100C04C2E /* APITimerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITimerSettings.swift; sourceTree = "<group>"; };
+		E5D12F752CC686FF00C04C2E /* ContentView+CurrencyPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+CurrencyPickerView.swift"; sourceTree = "<group>"; };
+		E5D12F772CC6873600C04C2E /* ContentView+ExchangeRatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView+ExchangeRatesView.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E550B9FA2CC26F1F005B9553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E550BA412CC3C6DD005B9553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E550B9F42CC26F1F005B9553 = {
+			isa = PBXGroup;
+			children = (
+				E550B9FF2CC26F1F005B9553 /* OpenExchangeRates */,
+				E550BA452CC3C6DD005B9553 /* OpenExchangeRatesTests */,
+				E550B9FE2CC26F1F005B9553 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E550B9FE2CC26F1F005B9553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E550B9FD2CC26F1F005B9553 /* OpenExchangeRates.app */,
+				E550BA442CC3C6DD005B9553 /* OpenExchangeRatesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E550B9FF2CC26F1F005B9553 /* OpenExchangeRates */ = {
+			isa = PBXGroup;
+			children = (
+				E5D12F672CC4EC1500C04C2E /* Info.plist */,
+				E550BA112CC26F4C005B9553 /* Util */,
+				E550BA0F2CC26F3C005B9553 /* Model */,
+				E550BA0E2CC26F32005B9553 /* Views */,
+				E550BA102CC26F41005B9553 /* ViewModel */,
+				E550BA002CC26F1F005B9553 /* OpenExchangeRatesApp.swift */,
+				E550BA042CC26F20005B9553 /* Assets.xcassets */,
+				E550BA062CC26F20005B9553 /* Preview Content */,
+			);
+			path = OpenExchangeRates;
+			sourceTree = "<group>";
+		};
+		E550BA062CC26F20005B9553 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA072CC26F20005B9553 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E550BA0E2CC26F32005B9553 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA022CC26F1F005B9553 /* ContentView.swift */,
+				E550BA332CC39164005B9553 /* ExchangeRatesCell.swift */,
+				E5D12F6A2CC4EFD200C04C2E /* CustomLinearGradientView.swift */,
+				E5D12F752CC686FF00C04C2E /* ContentView+CurrencyPickerView.swift */,
+				E5D12F772CC6873600C04C2E /* ContentView+ExchangeRatesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E550BA0F2CC26F3C005B9553 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA212CC27AC0005B9553 /* ExchangeRateModel.swift */,
+				E550BA3E2CC3C3BF005B9553 /* ExchangedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E550BA102CC26F41005B9553 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA272CC29955005B9553 /* ExchangeRatesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E550BA112CC26F4C005B9553 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E5D12F702CC66D3200C04C2E /* PropertyWrapers */,
+				E5D12F5E2CC4E04200C04C2E /* Configs */,
+				E5D12F5B2CC4DCF900C04C2E /* TimerServices */,
+				E550BA372CC39BDC005B9553 /* ViewModifiers */,
+				E550BA132CC26F5A005B9553 /* Extensions */,
+				E550BA122CC26F51005B9553 /* NetworkClient */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E550BA122CC26F51005B9553 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA142CC26FB3005B9553 /* NetworkService.swift */,
+				E550BA172CC2719F005B9553 /* HTTPMethod.swift */,
+				E550BA1B2CC275E3005B9553 /* CurrencyListService.swift */,
+				E550BA1D2CC27618005B9553 /* URLConfigurations.swift */,
+				E550BA1F2CC279B4005B9553 /* ExchangeRatesService.swift */,
+				E550BA3C2CC3B075005B9553 /* APIClientError.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		E550BA132CC26F5A005B9553 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA192CC274C5005B9553 /* Data+Extension.swift */,
+				E550BA312CC38A1B005B9553 /* Date+Extension.swift */,
+				E550BA352CC399FA005B9553 /* Double+Extension.swift */,
+				E5D12F5C2CC4DEEB00C04C2E /* URLRequest+Extension.swift */,
+				E5D12F6E2CC622C500C04C2E /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E550BA372CC39BDC005B9553 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA382CC39BEE005B9553 /* DecimalTextFieldModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		E550BA452CC3C6DD005B9553 /* OpenExchangeRatesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA462CC3C6DD005B9553 /* OpenExchangeRatesTests.swift */,
+				E550BA4D2CC3C6FB005B9553 /* MockCurrencyService.swift */,
+				E550BA4F2CC3C728005B9553 /* MockExchangeRateService.swift */,
+			);
+			path = OpenExchangeRatesTests;
+			sourceTree = "<group>";
+		};
+		E5D12F5B2CC4DCF900C04C2E /* TimerServices */ = {
+			isa = PBXGroup;
+			children = (
+				E550BA252CC29597005B9553 /* APITimerValidator.swift */,
+				E550BA232CC282E4005B9553 /* APITimerService.swift */,
+				E5D12F732CC66D6100C04C2E /* APITimerSettings.swift */,
+			);
+			path = TimerServices;
+			sourceTree = "<group>";
+		};
+		E5D12F5E2CC4E04200C04C2E /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				E5D12F5F2CC4E05900C04C2E /* Config.json */,
+				E5D12F6C2CC61A3700C04C2E /* PrecisionType.swift */,
+				E5D12F612CC4E12A00C04C2E /* URLConfigs.swift */,
+				E5D12F632CC4E52100C04C2E /* URLType.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		E5D12F702CC66D3200C04C2E /* PropertyWrapers */ = {
+			isa = PBXGroup;
+			children = (
+				E5D12F712CC66D4300C04C2E /* UserDefault+PropertyWrapper.swift */,
+			);
+			path = PropertyWrapers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E550B9FC2CC26F1F005B9553 /* OpenExchangeRates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E550BA0B2CC26F20005B9553 /* Build configuration list for PBXNativeTarget "OpenExchangeRates" */;
+			buildPhases = (
+				E550B9F92CC26F1F005B9553 /* Sources */,
+				E550B9FA2CC26F1F005B9553 /* Frameworks */,
+				E550B9FB2CC26F1F005B9553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenExchangeRates;
+			productName = OpenExchangeRates;
+			productReference = E550B9FD2CC26F1F005B9553 /* OpenExchangeRates.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E550BA432CC3C6DD005B9553 /* OpenExchangeRatesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E550BA4A2CC3C6DD005B9553 /* Build configuration list for PBXNativeTarget "OpenExchangeRatesTests" */;
+			buildPhases = (
+				E550BA402CC3C6DD005B9553 /* Sources */,
+				E550BA412CC3C6DD005B9553 /* Frameworks */,
+				E550BA422CC3C6DD005B9553 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E550BA492CC3C6DD005B9553 /* PBXTargetDependency */,
+			);
+			name = OpenExchangeRatesTests;
+			productName = OpenExchangeRatesTests;
+			productReference = E550BA442CC3C6DD005B9553 /* OpenExchangeRatesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E550B9F52CC26F1F005B9553 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					E550B9FC2CC26F1F005B9553 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					E550BA432CC3C6DD005B9553 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E550B9FC2CC26F1F005B9553;
+					};
+				};
+			};
+			buildConfigurationList = E550B9F82CC26F1F005B9553 /* Build configuration list for PBXProject "OpenExchangeRates" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E550B9F42CC26F1F005B9553;
+			productRefGroup = E550B9FE2CC26F1F005B9553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E550B9FC2CC26F1F005B9553 /* OpenExchangeRates */,
+				E550BA432CC3C6DD005B9553 /* OpenExchangeRatesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E550B9FB2CC26F1F005B9553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E550BA082CC26F20005B9553 /* Preview Assets.xcassets in Resources */,
+				E5D12F602CC4E05900C04C2E /* Config.json in Resources */,
+				E550BA052CC26F20005B9553 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E550BA422CC3C6DD005B9553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E550B9F92CC26F1F005B9553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E550BA392CC39BEE005B9553 /* DecimalTextFieldModifier.swift in Sources */,
+				E550BA202CC279B4005B9553 /* ExchangeRatesService.swift in Sources */,
+				E550BA1C2CC275E3005B9553 /* CurrencyListService.swift in Sources */,
+				E5D12F762CC686FF00C04C2E /* ContentView+CurrencyPickerView.swift in Sources */,
+				E550BA342CC39164005B9553 /* ExchangeRatesCell.swift in Sources */,
+				E550BA322CC38A1B005B9553 /* Date+Extension.swift in Sources */,
+				E550BA032CC26F1F005B9553 /* ContentView.swift in Sources */,
+				E550BA242CC282E4005B9553 /* APITimerService.swift in Sources */,
+				E550BA1E2CC27618005B9553 /* URLConfigurations.swift in Sources */,
+				E550BA282CC29955005B9553 /* ExchangeRatesViewModel.swift in Sources */,
+				E550BA3F2CC3C3BF005B9553 /* ExchangedModel.swift in Sources */,
+				E5D12F6F2CC622C500C04C2E /* View+Extension.swift in Sources */,
+				E5D12F782CC6873600C04C2E /* ContentView+ExchangeRatesView.swift in Sources */,
+				E5D12F642CC4E52100C04C2E /* URLType.swift in Sources */,
+				E5D12F722CC66D4300C04C2E /* UserDefault+PropertyWrapper.swift in Sources */,
+				E550BA362CC399FA005B9553 /* Double+Extension.swift in Sources */,
+				E5D12F6D2CC61A3700C04C2E /* PrecisionType.swift in Sources */,
+				E550BA182CC2719F005B9553 /* HTTPMethod.swift in Sources */,
+				E5D12F6B2CC4EFD200C04C2E /* CustomLinearGradientView.swift in Sources */,
+				E5D12F5D2CC4DEEB00C04C2E /* URLRequest+Extension.swift in Sources */,
+				E550BA1A2CC274C5005B9553 /* Data+Extension.swift in Sources */,
+				E550BA3D2CC3B075005B9553 /* APIClientError.swift in Sources */,
+				E5D12F622CC4E12A00C04C2E /* URLConfigs.swift in Sources */,
+				E550BA012CC26F1F005B9553 /* OpenExchangeRatesApp.swift in Sources */,
+				E550BA152CC26FB3005B9553 /* NetworkService.swift in Sources */,
+				E550BA222CC27AC0005B9553 /* ExchangeRateModel.swift in Sources */,
+				E550BA262CC29597005B9553 /* APITimerValidator.swift in Sources */,
+				E5D12F742CC66D6100C04C2E /* APITimerSettings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E550BA402CC3C6DD005B9553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E550BA502CC3C728005B9553 /* MockExchangeRateService.swift in Sources */,
+				E550BA4E2CC3C6FB005B9553 /* MockCurrencyService.swift in Sources */,
+				E550BA472CC3C6DD005B9553 /* OpenExchangeRatesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E550BA492CC3C6DD005B9553 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E550B9FC2CC26F1F005B9553 /* OpenExchangeRates */;
+			targetProxy = E550BA482CC3C6DD005B9553 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E550BA092CC26F20005B9553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E550BA0A2CC26F20005B9553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E550BA0C2CC26F20005B9553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenExchangeRates/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenExchangeRates/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = first.OpenExchangeRates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E550BA0D2CC26F20005B9553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OpenExchangeRates/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenExchangeRates/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = first.OpenExchangeRates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E550BA4B2CC3C6DD005B9553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTCKKZBR2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ivy.OpenExchangeRatesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenExchangeRates.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenExchangeRates";
+			};
+			name = Debug;
+		};
+		E550BA4C2CC3C6DD005B9553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTCKKZBR2C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ivy.OpenExchangeRatesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenExchangeRates.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OpenExchangeRates";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E550B9F82CC26F1F005B9553 /* Build configuration list for PBXProject "OpenExchangeRates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E550BA092CC26F20005B9553 /* Debug */,
+				E550BA0A2CC26F20005B9553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E550BA0B2CC26F20005B9553 /* Build configuration list for PBXNativeTarget "OpenExchangeRates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E550BA0C2CC26F20005B9553 /* Debug */,
+				E550BA0D2CC26F20005B9553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E550BA4A2CC3C6DD005B9553 /* Build configuration list for PBXNativeTarget "OpenExchangeRatesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E550BA4B2CC3C6DD005B9553 /* Debug */,
+				E550BA4C2CC3C6DD005B9553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E550B9F52CC26F1F005B9553 /* Project object */;
+}
