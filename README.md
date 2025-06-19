@@ -2,7 +2,7 @@
 
 OpenExchangeRates is an iOS application built using Swift and SwiftUI. It retrieves and displays currency exchange rates from external APIs. The app leverages MVVM architecture, utility services, timer-based API polling, and property wrappers for efficient and maintainable code.
 
-![OpenExchangeRate App](CurrencyExchange.png)
+![OpenExchangeRate App](Currency.png)
 
 ## Open Exchange Rates Application
 ## Features and Requirements
